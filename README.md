@@ -8,26 +8,26 @@
 
 ### Requirements
 
-•	What days and times do we tend to be busiest?
-•	How many pizzas are we making during peak periods?
-•	What are our best and worst-selling pizzas?
-•	What's our average order value?
+1	What days and times do we tend to be busiest?
+2	How many pizzas are we making during peak periods?
+3	What are our best and worst-selling pizzas?
+4	What's our average order value?
 
 ### Solution
 
-•	Build Dataset
-•	Develop the Model
-•	Import Dataset in PowerBi
-•	Visualize
-•	Summarize findings 
+1	Build Dataset
+2	Develop the Model
+3	Import Dataset in PowerBi
+4	Visualize
+4	Summarize findings 
 
 ### Steps
 
-•	Import CSV file into the PowerBi using the CSV import option/Pull the Zip file directly from website using R language.
-•	Create a model and clean the data with a Power query
-•	Write queries for the desired result
-•	Write DAX query for complex calculation
-•	Create measures and Calculated column
-•	Visualize data on canvas using visualization chats
-•	Create RLS
+1	Import CSV file into the PowerBi using the CSV import option/Pull the Zip file directly from website using R language.
+2	Create a model and clean the data with a Power query
+3	Write queries for the desired result
+4	Write DAX query for complex calculation
+5	Create measures and Calculated column
+6	Visualize data on canvas using visualization chats
+7	Create RLS
 
