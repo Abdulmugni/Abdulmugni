@@ -56,7 +56,7 @@ Overall the project aims to increase customer satisfaction and sales by utilizin
 * Microsoft SQL Server (Direct Query mode)
 * Charts (Bar chart, Column Chart, Donught Chart, Matrics, Cards etc)
 
-
+![](Images/sql project powerbi_page-0001.png)
 
 **Summary** : The hotel revenue analysis determined that the hotel's revenue has been growing year over year. 
 However, it is important to note that other factors such as changes in occupancy rates and room prices also play a role in revenue growth.
