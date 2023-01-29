@@ -1,2 +1,2 @@
-# abdulmugni.Portfolio.io
+# AbdulMugni PowerBI Developer Portfolio
 PowerBI Developer Portfolio
