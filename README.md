@@ -1,8 +1,8 @@
 # AbdulMugni PowerBI Developer Portfolio
 
-# PowerBI Developer Portfolio
 
-## 1.	Maven Pizza Analysis
+
+# 1.	Maven Pizza Analysis
 
 ### Used Tools
 
@@ -46,7 +46,7 @@ Overall the project aims to increase customer satisfaction and sales by utilizin
 *	Create RLS
 
 
-## 2. Hotel Revenue Report
+# 2. Hotel Revenue Report
 
 ### Used Tools
 
