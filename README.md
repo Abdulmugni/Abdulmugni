@@ -6,6 +6,15 @@
 
 ### Used Tools
 
+*1- Business requirement Document (BRD)
+*2- Data Gathering
+*3- Data Cleaning/Transformation
+*4- Data modelling
+*5- UI(Power View Reports)
+*6- DAX functions
+*7- Enhance UI
+*8- Row Level Security(RLS)
+
 * Power Query (Advancce Editor, Custom Columns, Transformation)
 * Power Pivot (Data Model, Star Schema)
 * DAX (Calculated Column, Measures)
@@ -49,6 +58,14 @@ Overall the project aims to increase customer satisfaction and sales by utilizin
 # 2. Hotel Revenue Report
 
 ### Used Tools
+
+*1- Business requirement Document (BRD)
+*2- Data Gathering
+*3- Data Cleaning/Transformation
+*4- Data modelling
+*5- UI(Power View Reports)
+*6- DAX functions
+*7- Enhance UI
 
 * Power Query (Advancce Editor, Custom Columns, Transformation)
 * Power Pivot (Data Model, Star Schema)
