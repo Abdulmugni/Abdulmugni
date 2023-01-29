@@ -4,6 +4,8 @@
 
 ## 1.	Maven Pizza Analysis
 
+![](Images/Maven_challange_page-0001.jpg)
+
 **Summary** : The Maven Pizza Analysis report is a project developed to analyze customer satisfaction and purchasing trends at a pizza restaurant. The report includes data on customer demographics, menu item popularity, and feedback on service and atmosphere. The findings of the report were used to make recommendations for improving the restaurant's overall performance. The report has also been used to identify potential areas for future expansion and to help create a more personalized and enjoyable experience for customers. Overall the project aims to increase customer satisfaction and sales by utilizing data and customer feedback to improve the operations and service of the pizza restaurant.
 
 ### Requirements
