@@ -59,6 +59,8 @@ Overall the project aims to increase customer satisfaction and sales by utilizin
 
 # 2. Hotel Revenue Report
 
+![](Images/HotelRevenue.gif)
+
 ### Used Tools
 
 * 1- Business requirement Document (BRD)
