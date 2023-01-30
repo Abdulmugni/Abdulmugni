@@ -4,7 +4,7 @@
 
 # 1.	Maven Pizza Analysis
 
-<p><img align="centre alt="gif" src="https://github.com/Abdulmugni/Abdulmugni/blob/main/Images/MavenPizza_AdobeExpress.gif" width="480" height="270" /></p>
+<p><img align="right alt="gif" src="https://github.com/Abdulmugni/Abdulmugni/blob/main/Images/MavenPizza_AdobeExpress.gif" width="480" height="270" /></p>
 
 ### Used Tools
 
