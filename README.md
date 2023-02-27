@@ -1,6 +1,6 @@
 # AbdulMugni PowerBI Developer Portfolio
 
-<iframe title="finalreport" width="1024" height="1060" src="https://app.powerbi.com/view?r=eyJrIjoiZTA3NTExOGQtYTk5NS00OTM4LWJlYjItNjI3YmM5MjJkNTZjIiwidCI6IjBkZTRmOTJjLTY0NmItNGU5NS1iYTRmLTYwOTJiYWNjYjQ2MSJ9" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="finalreport" width="1024" height="804" src="https://app.powerbi.com/view?r=eyJrIjoiZTA3NTExOGQtYTk5NS00OTM4LWJlYjItNjI3YmM5MjJkNTZjIiwidCI6IjBkZTRmOTJjLTY0NmItNGU5NS1iYTRmLTYwOTJiYWNjYjQ2MSJ9" frameborder="0" allowFullScreen="true"></iframe>
 
 # 1.	Maven Pizza Analysis
 
