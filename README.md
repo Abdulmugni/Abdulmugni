@@ -1,4 +1,3 @@
-remote_theme: cayman
 # AbdulMugni PowerBI Developer Portfolio
 
 <iframe title="Report Section" width="1024" height="612" src="https://app.powerbi.com/view?r=eyJrIjoiNDhlNWUzZGYtNzllOC00N2Q4LWJkMjAtZTIzYzZjYWZlYjUzIiwidCI6IjBkZTRmOTJjLTY0NmItNGU5NS1iYTRmLTYwOTJiYWNjYjQ2MSJ9" frameborder="0" allowFullScreen="true"></iframe>
