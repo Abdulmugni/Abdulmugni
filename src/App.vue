@@ -1,4 +1,5 @@
 <template>
+  <LivingInteraction />
   <div class="site">
     <Navbar />
     <main>
@@ -15,6 +16,7 @@
 </template>
 
 <script setup>
+import LivingInteraction from "./components/LivingInteraction.vue"
 import Navbar from "./components/Navbar.vue"
 import Hero from "./components/Hero.vue"
 import About from "./components/About.vue"
