@@ -2291,15 +2291,35 @@ h1 {
   color: var(--living-green);
 }
 
-.cursor-line b {
+/* Updated cursor caret for modern aesthetic */
+.cursor-caret {
   display: inline-block;
-  width: 6px;
-  height: 11px;
-  margin-left: 3px;
-  vertical-align: -2px;
-  background: var(--living-green);
-  animation: cursorBlink 1s steps(1) infinite;
+  width: 2px;
+  height: 1.2em;
+  margin-left: 0.2em;
+  vertical-align: -0.2em;
+  background: var(--accent);
+  border-radius: 1px;
+  box-shadow: 0 0 4px var(--accent);
+  animation: caretBlink 1.2s steps(2, start) infinite;
+  will-change: opacity, transform;
 }
+
+@keyframes caretBlink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor-caret {
+    animation: none;
+  }
+}
+
+@media (pointer: coarse) {
+  .cursor-line { display: none; }
+}
+
 
 .principles-grid {
   display: grid;

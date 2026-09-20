@@ -263,7 +263,7 @@
             <p>→ omni / fallback chain ready</p>
             <p><span>$</span> sync --workspace</p>
             <p class="success">✓ windows node connected</p>
-            <p class="cursor-line"><span>$</span> <b></b></p>
+            <p class="cursor-line"><span>$</span> <span class="cursor-caret" aria-hidden="true"></span></p>
           </div>
         </div>
       </div>
