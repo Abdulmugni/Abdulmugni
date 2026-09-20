@@ -3,66 +3,60 @@
     <div class="container">
       <div class="section-head">
         <span class="section-number">04</span>
-        <span class="section-label">RESUME / BACKGROUND</span>
+        <span class="section-label">RESUME / PROFILE</span>
       </div>
 
+      <!-- Simple tab navigation -->
       <div class="resume-tabs">
-        <div class="tabs-nav">
+        <div class="tabs">
           <button
-            v-for="tab in tabs"
+            v-for="(tab, idx) in tabs"
             :key="tab.id"
-            :class="['tab-button', activeTab === tab.id && 'active']"
-            @click="activeTab = tab.id"
+            @click="active = idx"
+            :class="{ active: active === idx }"
+            class="tab-button"
           >
             {{ tab.label }}
           </button>
         </div>
-        <div class="tabs-content">
-          <div v-if="activeTab === 'experience'" class="tab-panel">
-            <h3>Professional Experience</h3>
-            <ul class="resume-list">
-              <li>
-                <strong>Power BI Developer – Accenture</strong> (2023 – Present)
-                <p>Driving enterprise‑wide analytics, building scalable dashboards, and automating data pipelines to enable data‑driven decision making.</p>
-              </li>
-              <li>
-                <strong>Test Engineer / Power BI – GlobalStep</strong> (2022 – 2023)
-                <p>Combined quality engineering with analytics, establishing testing frameworks and data models that improved release velocity.</p>
-              </li>
-            </ul>
+        <div class="tab-content">
+          <!-- Experience Tab -->
+          <div v-if="active === 0" class="tab-panel">
+            <h3>Experience</h3>
+            <p>
+              Senior Power BI and Data Engineer &amp; AI
+              enthusiast with 4+ years of building end‑to‑end analytical systems.
+              At Accenture I lead enterprise reporting, performance tuning,
+              and data model design for global clients, delivering 30+ strategic
+              dashboards and high‑impact analytics.
+            </p>
           </div>
-
-          <div v-else-if="activeTab === 'education'" class="tab-panel">
+          <!-- Education Tab -->
+          <div v-else-if="active === 1" class="tab-panel">
             <h3>Education</h3>
-            <ul class="resume-list">
-              <li>
-                <strong>B.Sc. Computer Science</strong>, University of XYZ (2021)
-                <p>Focused on data engineering, visual analytics, and AI‑driven systems.</p>
-              </li>
-            </ul>
+            <p>
+              B.Sc. in Computer Science, University of Hyderabad (2020).
+              Focus on data management, machine learning and user‑centered UI.
+            </p>
           </div>
-
-          <div v-else-if="activeTab === 'skills'" class="tab-panel">
-            <h3>Core Skills</h3>
-            <div class="skill-cloud">
-              <span>Power BI</span>
-              <span>DAX</span>
-              <span>SQL</span>
-              <span>Azure Data Factory</span>
-              <span>Python</span>
-              <span>AI Agents</span>
-              <span>Git</span>
-              <span>CI/CD</span>
-            </div>
+          <!-- Skills Tab -->
+          <div v-else-if="active === 2" class="tab-panel">
+            <h3>Skills</h3>
+            <p>
+              Business Intelligence (Power BI, DAX, Power Query),
+              Data Engineering (SQL, Azure Data Factory, Synapse),
+              Automation &amp; AI (Python, Azure Functions, Agentic workflows),
+              Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure).
+            </p>
           </div>
-
-          <div v-else-if="activeTab === 'certifications'" class="tab-panel">
+          <!-- Certifications Tab -->
+          <div v-else-if="active === 3" class="tab-panel">
             <h3>Certifications</h3>
-            <ul class="resume-list">
-              <li>Microsoft Certified: Data Analyst Associate (Power BI)</li>
-              <li>Microsoft Certified: Azure Fundamentals</li>
-              <li>ISTQB Certified Tester</li>
-            </ul>
+            <p>
+              Microsoft Certified: Data Analyst Associate,
+              Microsoft Certified: Azure AI Engineer Associate,
+              Certified Scrum Master (CSM).
+            </p>
           </div>
         </div>
       </div>
@@ -80,70 +74,50 @@ const tabs = [
   { id: 'certifications', label: 'Certifications' },
 ]
 
-const activeTab = ref('experience')
+// Index of the active tab
+const active = ref(0)
 </script>
 
 <style scoped>
-.resume-tabs {
-  margin-top: 30px;
-}
-
-.tabs-nav {
+.tabs {
   display: flex;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .tab-button {
-  background: transparent;
-  border: 1px solid var(--line2);
-  color: var(--muted);
-  font-size: 11px;
-  padding: 8px 12px;
+  background: none;
+  border: 1px solid var(--line);
   border-radius: 8px;
+  padding: 6px 12px;
+  color: var(--muted);
+  font: 9px "DM Mono";
   cursor: pointer;
-  transition: background 0.25s, color 0.25s, border-color 0.25s;
+  transition: .25s;
 }
 
+.tab-button.active,
 .tab-button:hover {
-  background: var(--accent);
-  color: var(--bg);
+  background: rgba(88,166,255,.07);
+  color: var(--text);
   border-color: var(--accent);
 }
 
-.tab-button.active {
-  background: var(--accent);
-  color: var(--bg);
-  border-color: var(--accent);
+.tab-content {
+  background: rgba(12,17,25,.75);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px;
 }
 
 .tab-panel h3 {
   margin-bottom: 12px;
   font-size: 24px;
-  color: var(--text);
-}
-
-.resume-list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  gap: 16px;
-  display: flex;
-  flex-direction: column;
-}
-
-.resume-list li {
-  color: var(--muted);
-}
-
-.resume-list strong {
-  display: block;
   color: var(--accent);
-  margin-bottom: 4px;
 }
 
-.resume-list p {
-  margin-top: 4px;
+.tab-panel p {
   color: var(--muted);
+  line-height: 1.5;
 }
 </style>
