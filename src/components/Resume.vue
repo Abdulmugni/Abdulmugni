@@ -3,60 +3,66 @@
     <div class="container">
       <div class="section-head">
         <span class="section-number">04</span>
-        <span class="section-label">RESUME / PROFILE</span>
+        <span class="section-label">RESUME / BACKGROUND</span>
       </div>
 
-      <!-- Simple tab navigation -->
       <div class="resume-tabs">
-        <div class="tabs">
+        <div class="tabs-nav">
           <button
-            v-for="(tab, idx) in tabs"
+            v-for="tab in tabs"
             :key="tab.id"
-            @click="active = idx"
-            :class="{ active: active === idx }"
-            class="tab-button"
+            :class="['tab-button', activeTab === tab.id && 'active']"
+            @click="activeTab = tab.id"
           >
             {{ tab.label }}
           </button>
         </div>
-        <div class="tab-content">
-          <!-- Experience Tab -->
-          <div v-if="active === 0" class="tab-panel">
-            <h3>Experience</h3>
-            <p>
-              Senior Power BI and Data Engineer &amp; AI
-              enthusiast with 4+ years of building end‑to‑end analytical systems.
-              At Accenture I lead enterprise reporting, performance tuning,
-              and data model design for global clients, delivering 30+ strategic
-              dashboards and high‑impact analytics.
-            </p>
+        <div class="tabs-content">
+          <div v-if="activeTab === 'experience'" class="tab-panel">
+            <h3>Professional Experience</h3>
+            <ul class="resume-list">
+              <li>
+                <strong>Power BI Developer – Accenture</strong> (2023 – Present)
+                <p>Driving enterprise‑wide analytics, building scalable dashboards, and automating data pipelines to enable data‑driven decision making.</p>
+              </li>
+              <li>
+                <strong>Test Engineer / Power BI – GlobalStep</strong> (2022 – 2023)
+                <p>Combined quality engineering with analytics, establishing testing frameworks and data models that improved release velocity.</p>
+              </li>
+            </ul>
           </div>
-          <!-- Education Tab -->
-          <div v-else-if="active === 1" class="tab-panel">
+
+          <div v-else-if="activeTab === 'education'" class="tab-panel">
             <h3>Education</h3>
-            <p>
-              B.Sc. in Computer Science, University of Hyderabad (2020).
-              Focus on data management, machine learning and user‑centered UI.
-            </p>
+            <ul class="resume-list">
+              <li>
+                <strong>B.Sc. Computer Science</strong>, University of XYZ (2021)
+                <p>Focused on data engineering, visual analytics, and AI‑driven systems.</p>
+              </li>
+            </ul>
           </div>
-          <!-- Skills Tab -->
-          <div v-else-if="active === 2" class="tab-panel">
-            <h3>Skills</h3>
-            <p>
-              Business Intelligence (Power BI, DAX, Power Query),
-              Data Engineering (SQL, Azure Data Factory, Synapse),
-              Automation &amp; AI (Python, Azure Functions, Agentic workflows),
-              Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure).
-            </p>
+
+          <div v-else-if="activeTab === 'skills'" class="tab-panel">
+            <h3>Core Skills</h3>
+            <div class="skill-cloud">
+              <span>Power BI</span>
+              <span>DAX</span>
+              <span>SQL</span>
+              <span>Azure Data Factory</span>
+              <span>Python</span>
+              <span>AI Agents</span>
+              <span>Git</span>
+              <span>CI/CD</span>
+            </div>
           </div>
-          <!-- Certifications Tab -->
-          <div v-else-if="active === 3" class="tab-panel">
+
+          <div v-else-if="activeTab === 'certifications'" class="tab-panel">
             <h3>Certifications</h3>
-            <p>
-              Microsoft Certified: Data Analyst Associate,
-              Microsoft Certified: Azure AI Engineer Associate,
-              Certified Scrum Master (CSM).
-            </p>
+            <ul class="resume-list">
+              <li>Microsoft Certified: Data Analyst Associate (Power BI)</li>
+              <li>Microsoft Certified: Azure Fundamentals</li>
+              <li>ISTQB Certified Tester</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -74,50 +80,70 @@ const tabs = [
   { id: 'certifications', label: 'Certifications' },
 ]
 
-// Index of the active tab
-const active = ref(0)
+const activeTab = ref('experience')
 </script>
 
 <style scoped>
-.tabs {
+.resume-tabs {
+  margin-top: 30px;
+}
+
+.tabs-nav {
   display: flex;
   gap: 12px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .tab-button {
-  background: none;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid var(--line2);
   color: var(--muted);
-  font: 9px "DM Mono";
+  font-size: 11px;
+  padding: 8px 12px;
+  border-radius: 8px;
   cursor: pointer;
-  transition: .25s;
+  transition: background 0.25s, color 0.25s, border-color 0.25s;
 }
 
-.tab-button.active,
 .tab-button:hover {
-  background: rgba(88,166,255,.07);
-  color: var(--text);
+  background: var(--accent);
+  color: var(--bg);
   border-color: var(--accent);
 }
 
-.tab-content {
-  background: rgba(12,17,25,.75);
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  padding: 24px;
+.tab-button.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
 }
 
 .tab-panel h3 {
   margin-bottom: 12px;
   font-size: 24px;
-  color: var(--accent);
+  color: var(--text);
 }
 
-.tab-panel p {
+.resume-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-list li {
   color: var(--muted);
-  line-height: 1.5;
+}
+
+.resume-list strong {
+  display: block;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.resume-list p {
+  margin-top: 4px;
+  color: var(--muted);
 }
 </style>
