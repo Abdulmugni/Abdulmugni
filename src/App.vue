@@ -7,6 +7,7 @@
       <About />
       <Skills />
       <Experience />
+      <Resume />
       <Projects />
       <InteractiveExperience />
       <Contact />
@@ -26,4 +27,5 @@ import Projects from "./components/Projects.vue"
 import Contact from "./components/Contact.vue"
 import Footer from "./components/Footer.vue"
 import InteractiveExperience from './components/InteractiveExperience.vue'
+import Resume from "./components/Resume.vue"
 </script>
