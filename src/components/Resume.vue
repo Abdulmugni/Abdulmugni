@@ -23,40 +23,42 @@
           <!-- Experience Tab -->
           <div v-if="active === 0" class="tab-panel">
             <h3>Experience</h3>
-            <p>
-              Senior Power BI and Data Engineer &amp; AI
-              enthusiast with 4+ years of building end‑to‑end analytical systems.
-              At Accenture I lead enterprise reporting, performance tuning,
-              and data model design for global clients, delivering 30+ strategic
-              dashboards and high‑impact analytics.
-            </p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Business Intelligence (Power BI, DAX, Power Query)</li>
+              <li>Data Engineering (SQL, Azure Data Factory, Synapse)</li>
+              <li>Automation &amp; AI (Python, Azure Functions, Agentic workflows)</li>
+              <li>Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure)</li>
+            </ul>
           </div>
           <!-- Education Tab -->
           <div v-else-if="active === 1" class="tab-panel">
             <h3>Education</h3>
-            <p>
-              B.Sc. in Computer Science, University of Hyderabad (2020).
-              Focus on data management, machine learning and user‑centered UI.
-            </p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Business Intelligence (Power BI, DAX, Power Query)</li>
+              <li>Data Engineering (SQL, Azure Data Factory, Synapse)</li>
+              <li>Automation &amp; AI (Python, Azure Functions, Agentic workflows)</li>
+              <li>Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure)</li>
+            </ul>
           </div>
           <!-- Skills Tab -->
           <div v-else-if="active === 2" class="tab-panel">
             <h3>Skills</h3>
-            <p>
-              Business Intelligence (Power BI, DAX, Power Query),
-              Data Engineering (SQL, Azure Data Factory, Synapse),
-              Automation &amp; AI (Python, Azure Functions, Agentic workflows),
-              Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure).
-            </p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Business Intelligence (Power BI, DAX, Power Query)</li>
+              <li>Data Engineering (SQL, Azure Data Factory, Synapse)</li>
+              <li>Automation &amp; AI (Python, Azure Functions, Agentic workflows)</li>
+              <li>Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure)</li>
+            </ul>
           </div>
           <!-- Certifications Tab -->
           <div v-else-if="active === 3" class="tab-panel">
             <h3>Certifications</h3>
-            <p>
-              Microsoft Certified: Data Analyst Associate,
-              Microsoft Certified: Azure AI Engineer Associate,
-              Certified Scrum Master (CSM).
-            </p>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Business Intelligence (Power BI, DAX, Power Query)</li>
+              <li>Data Engineering (SQL, Azure Data Factory, Synapse)</li>
+              <li>Automation &amp; AI (Python, Azure Functions, Agentic workflows)</li>
+              <li>Cloud &amp; DevOps (Git, GitHub, CI/CD, Azure)</li>
+            </ul>
           </div>
         </div>
       </div>
